@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.contact">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".PlacesTwo"></activity>
+        <activity android:name=".PlacesOne" />
+        <activity android:name=".Places" />
+        <activity android:name=".Laundry_u_d"
+            android:parentActivityName=".LaundryAdd"></activity>
+        <activity android:name=".LaundryAdd"
+            android:parentActivityName=".AccActivity"/>
+        <activity android:name=".weatheractivity"
+            android:parentActivityName=".dashboard"/>
+        <activity
+            android:name=".location_u_d"
+            android:parentActivityName=".locationlist" />
+        <activity
+            android:name=".aluthlocation"
+            android:parentActivityName=".locationlist" />
+        <activity android:name=".frontpage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:parentActivityName=".frontpage" />
+        <activity
+            android:name=".forgotpass"
+            android:parentActivityName=".RegisterActivity" />
+        <activity android:name=".dashboard" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".frontpage" />
+        <activity
+            android:name=".NewActivity"
+            android:parentActivityName=".dashboard" />
+        <activity android:name=".locationlist" />
+        <activity
+            android:name=".UnderDevelopment"
+            android:parentActivityName=".AccActivity" />
+        <activity
+            android:name=".activity_Order_del_update"
+            android:parentActivityName=".OrderMain" />
+        <activity
+            android:name=".OrderAdd"
+            android:parentActivityName=".OrderMain" />
+        <activity
+            android:name=".OrderMain"
+            android:parentActivityName=".AccActivity" />
+        <activity
+            android:name=".AccActivity"
+            android:parentActivityName=".dashboard" />
+        <activity
+            android:name=".RoomReservation"
+            android:parentActivityName=".dashboard" />
+        <activity
+            android:name=".RoomReservation_Edit"
+            android:parentActivityName=".AccActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
