@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 public class dashboard extends AppCompatActivity {
 
     private LinearLayout crd_room;
+    private LinearLayout Places;
     private TextView txt_uid;
     DatabaseReference databaseReference;
     OrderDetails orderDetails;
@@ -29,18 +31,19 @@ public class dashboard extends AppCompatActivity {
     String uid;
     TextView signUp;
 
+    @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
-        signUp = findViewById(R.id.sign_up);
+        Places=(LinearLayout)findViewById(R.id.Places);
 
 
         txt_uid=(TextView) findViewById(R.id.txt_uid);
 
         user= FirebaseAuth.getInstance().getCurrentUser();
         uid=user.getUid();
-        signUp.setOnClickListener(new View.OnClickListener() {
+        Places.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(dashboard.this,Places.class));

@@ -19,7 +19,7 @@ public class splashscreen extends AppCompatActivity {
                 Intent intent = new Intent(splashscreen.this,frontpage.class);
                 startActivity(intent);
             }
-        },5000);
+        },10000);
 
         //5000-> 5 seconds
     }
