@@ -4,40 +4,56 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/paaaa"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/paaaa"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".PlacesTwo"></activity>
-        <activity android:name=".PlacesOne" />
-        <activity android:name=".Places" />
-        <activity android:name=".Laundry_u_d"
-            android:parentActivityName=".LaundryAdd"></activity>
-        <activity android:name=".LaundryAdd"
-            android:parentActivityName=".AccActivity"/>
-        <activity android:name=".weatheractivity"
-            android:parentActivityName=".dashboard"/>
-        <activity
-            android:name=".location_u_d"
-            android:parentActivityName=".locationlist" />
-        <activity
-            android:name=".aluthlocation"
-            android:parentActivityName=".locationlist" />
-        <activity android:name=".frontpage">
+        android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+
+        <!--splash screen-->
+        <activity android:name=".splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Login/Signing page-->
+        <activity android:name=".frontpage" />
+
+        <activity android:name=".PlacesTwo" />
+        <activity android:name=".PlacesOne" />
+        <activity android:name=".Places" />
+        <activity
+            android:name=".Laundry_u_d"
+            android:parentActivityName=".LaundryAdd" />
+
+        <activity
+            android:name=".LaundryAdd"
+            android:parentActivityName=".AccActivity" />
+
+        <activity
+            android:name=".weatheractivity"
+            android:parentActivityName=".dashboard" />
+
+        <activity
+            android:name=".location_u_d"
+            android:parentActivityName=".locationlist" />
+
+        <activity
+            android:name=".aluthlocation"
+            android:parentActivityName=".locationlist" />
+
         <activity
             android:name=".MainActivity"
             android:parentActivityName=".frontpage" />
+
         <activity
             android:name=".forgotpass"
             android:parentActivityName=".RegisterActivity" />
+
         <activity android:name=".dashboard" />
+
         <activity
             android:name=".RegisterActivity"
             android:parentActivityName=".frontpage" />
@@ -45,6 +61,7 @@
             android:name=".NewActivity"
             android:parentActivityName=".dashboard" />
         <activity android:name=".locationlist" />
+
         <activity
             android:name=".UnderDevelopment"
             android:parentActivityName=".AccActivity" />
@@ -70,6 +87,7 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
     </application>
 
 </manifest>
